@@ -1,0 +1,90 @@
+/*********************************************
+*
+* Copyright ©Quelopande 2023. All Rights Reserved
+* Fonts: https://fonts.google.com
+* Waves and other SVG: https://app.haikei.app/
+*
+*********************************************/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: "Funnel display", serif;
+  font-style: normal;
+  font-weight: 800;
+  src: url('/assets/fonts/FunnelDisplay-Bold.ttf');
+}
+@font-face {
+  font-family: "Funnel display", serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/fonts/FunnelDisplay-Regular.ttf');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/assets/fonts/Poppins-Italic.ttf');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/fonts/Poppins-Medium.ttf');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  src: url('/assets/fonts/Poppins-MediumItalic.ttf');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/assets/fonts/Poppins-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 600;
+  src: url('/assets/fonts/Poppins-SemiBoldItalic.ttf');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/assets/fonts/Poppins-BoldItalic.ttf');
+}
+:root{
+  --background-page: #f2f2f2;
+  --blue-light: #7492ff;
+  --blue-semi-dark: #4285F4;
+  --blue-dark: #3367D6;
+  --standard-background: #0000000d;
+  --standard-background-hover: #0000001f;
+  --standard-txt-color: #323232;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Permanent Marker', cursive; */
+  /* font-family: 'Kanit', sans-serif; */
+  overflow-x: hidden;
+  background-color: var(--background-page);
+}
+.funnelDisplay{
+  font-family: "Funnel display", serif;
+}

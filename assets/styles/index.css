@@ -1,0 +1,170 @@
+.title{
+    font-family: "Funnel display", serif;
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+}
+.hero{
+    color: #323232;
+    font-size: 35px;
+    margin-top: 8vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url("/assets/media/bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    height: 90vh;
+}
+.hero h1{
+    position: relative;
+    z-index: 1;
+    margin-left: 10%;
+    padding-top: 25vh;
+    font-size: 100px;
+    text-decoration: solid underline var(--blue-light);
+}
+.hero h1 span{
+    color: var(--blue-dark);
+}
+.hero p{
+    margin: 10px 10% 10px;
+    font-size: 25px;
+}
+.hero p u{
+    color: rgb(205, 0, 0);
+}
+.hero .heroButtons{
+    width: 100%;
+    display: flex;
+    margin: 10px 10%;
+}
+.hero .heroButtons a{
+    padding: 10px 60px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    background-color: var(--blue-semi-dark);
+}
+.hero .heroButtons a:hover{
+    background-color: var(--blue-dark);
+    transition: 0.4s background-color;
+}
+.hero .heroButtons a:nth-child(1){
+    margin-right: 20px;
+}
+.features{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.featureTitle{
+    text-align: center;
+    margin-top: 20px;
+}
+.features .feature{
+    margin: 20px 10px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: var(--standard-background);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 30%;
+    text-align: center;
+}
+.features .feature:hover{
+    transform: translateY(-8px);
+    background-color: var(--standard-background-hover);
+}
+.features .feature div i{
+    color: var(--blue-dark);
+    font-size: 40px;
+}
+.features .feature div h3{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 25px;
+}
+.features .feature p{
+    margin-top: 20px;
+    color: var(--standard-txt-color);
+}
+.infoSection{
+    margin-top: 40px;
+    background-color: var(--standard-background);
+}
+.infoSection .title{
+    padding-top: 40px;
+}
+.infoSection .title span{
+    background: var(--blue-light);
+    color: #dbe3ff;
+    padding: 5px 20px !important;
+    border-radius: 100px;
+}
+@media (max-width: 1470px) {
+    .hero h1{
+        font-size: 70px;
+    }
+    .hero p{
+        font-size: 20px;
+    }
+    .hero{
+        background-position: 80%;
+    }
+}
+@media (max-width: 1270px) {
+    .hero{
+        background-position: 20%;
+    }
+    .features{
+        flex-wrap: wrap;
+    }
+    .features .feature{
+        width: 48.1%;
+    }
+}
+@media (max-width: 1100px){
+    .hero h1{
+        font-size: 50px;
+    }
+    .hero p{
+        font-size: 18px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .features .feature{
+        width: 100%;
+    }
+}
+@media (max-width: 700px){
+    .hero .heroButtons{
+        flex-direction: column;
+        margin-right: 200px;
+    }
+    .hero .heroButtons a{
+        margin: 10px 0px;
+        margin-right: 80px !important;
+        text-align: center;
+    }
+}
+@media (max-width: 500px){
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 350px){
+    .hero h1{
+        font-size: 30px;
+    }
+    .hero p{
+        font-size: 14px;
+    }
+}
