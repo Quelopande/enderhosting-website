@@ -1,0 +1,36 @@
+footer{
+    background-color: var(--standard-background-hover);
+    padding: 50px;
+    margin: 10px;
+    border-radius: 46px;
+}
+footer .footerSections{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+footer .footerSections .footerSection{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+footer .footerSections .footerSection h4{
+    font-size: 20px;
+    color: var(--standard-txt-second-color);
+}
+footer .footerSections .footerSection p{
+    font-size: 15px;
+}
+footer .footerSections .footerSection a{
+    color: var(--standard-txt-color);
+    text-decoration: underline 1px;
+    text-underline-offset: 3px;
+}
+footer .footerSections .footerSection a:hover{
+    cursor: pointer;
+    color: var(--blue-dark);
+}
+footer .footerCopyRight{
+    text-align: center;
+    margin-top: 20px;
+}

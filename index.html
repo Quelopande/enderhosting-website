@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Twitter card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="EnderDeploy - Dashboard">
-    <meta name="twitter:image" content="/assets/media/logo.webp">
-    <!-- Facebook & discord -->
-    <meta property="og:locale" content="es"/>
-    <meta property="og:site_name" content="©EnderHosting"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="EnderDeploy - Dashboard"/>
-    <meta property="og:url" content="https://deploy.enderhosting.com.mx"/>
-    <meta property="og:image" content="/assets/media/logo.webp"/>
-    <meta property="og:image:width" content="540"/>
-    <meta property="og:image:height" content="520"/>
-    <title>Enderdeploy dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="EnderHosting - Hosting profesional con máximo rendimiento y soporte 24/7. Ofrecemos servidores dedicados, VPS y hosting compartido con garantía de uptime.">
+    <meta name="keywords" content="hosting, servidores, VPS, hosting México, servidores dedicados, cloud hosting, alojamiento web">
+    <meta name="author" content="EnderHosting">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.enderhosting.com.mx/">
+    <meta property="og:title" content="EnderHosting - Tu Servidor, Nuestro Compromiso">
+    <meta property="og:description" content="Hosting profesional con máximo rendimiento y soporte 24/7. Garantía de uptime y soluciones escalables.">
+    <meta property="og:image" content="https://www.enderhosting.com.mx/assets/logo1.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.enderhosting.com.mx/">
+    <meta property="twitter:title" content="EnderHosting - Tu Servidor, Nuestro Compromiso">
+    <meta property="twitter:description" content="Hosting profesional con máximo rendimiento y soporte 24/7. Garantía de uptime y soluciones escalables.">
+    <meta property="twitter:image" content="https://www.enderhosting.com.mx/assets/logo1.png">
+    <!-- Favicon (Generar múltiples tamaños y formatos) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo1.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/logo1.png">
+    <link rel="manifest" href="/assets/logo1.png">
+    <link rel="mask-icon" href="/assets/logo1.png" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/logo1.png">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>EnderHosting - Hosting Profesional con Máximo Rendimiento y Soporte 24/7</title>
     <link rel="stylesheet" href="/assets/styles/fonts.css">
     <link rel="stylesheet" href="/assets/styles/menu.css">
+    <link rel="stylesheet" href="/assets/styles/footer.css">
     <link rel="stylesheet" href="/assets/styles/index.css">
     <script src="/assets/scripts/menu.js"></script>
     <link href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" rel="stylesheet"/>
@@ -33,17 +46,18 @@
         </div>
         <div class="ullast">
             <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/prices">Precio</a></li>
-                <li><a href="/docs">Documentación</a></li>
-                <li><a href="/support">Soporte</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Caracteristicas</a></li>
+                <li><a href="https://clients.enderhosting.com.mx/store">Precio</a></li>
+                <li><a href="https://docs.enderhosting.com.mx/">Documentación</a></li>
+                <li><a href="https://clients.enderhosting.com.mx/tickets/create">Soporte</a></li>
             </ul>
             <div class="last">
                 <a href="https://clients.enderhosting.com.mx/auth/login" class="btn">Iniciar sesión</a>
             </div>
         </div>
     </nav>
-    <div class="hero">
+    <div class="hero" id="inicio">
         <h1 class="funnelDisplay">Tu Servidor, <br><span> Nuestro Compromiso</span></h1>
         <p>La mejor opción para empresas de todos los tamaños.</p>
         <div class="heroButtons">
@@ -51,49 +65,206 @@
             <a href="https://clients.enderhosting.com.mx/store" class="btn">Ver precios</a>
         </div>
     </div>
-    <h2 class="featureTitle title">Características destacadas</h2>
-    <div class="features">
-        <div class="feature">
+    <h2 class="cardTitle title" id="caracteristicas">Características destacadas</h2>
+    <div class="cards">
+        <div class="card">
             <div class="funnelDisplay"><i class="fa-solid fa-gauge"></i><h3>Alto Rendimiento</h3></div>
             <p>Nuestros servidores están equipados con la última generación de procesadores Ryzen 9, diseñados para ofrecer un rendimiento excepcional y garantizar la máxima eficiencia en todo momento</p>
         </div>
-        <div class="feature">
+        <div class="card">
             <div class="funnelDisplay"><i class="fa-solid fa-shield"></i><h3>Seguridad Avanzada</h3></div>
             <p>Protección de datos confiable y medidas de seguridad efectivas para mantener la información de tu empresa o comunidad segura en todo momento.</p>
         </div>
-        <div class="feature">
+        <div class="card">
             <div class="funnelDisplay"><i class="fa-solid fa-headset"></i><h3>Soporte 24/7</h3></div>
             <p>Asistencia técnica siempre disponible, operando desde México y España, para resolver tus dudas y brindarte soporte cuando lo necesites.</p>
         </div>
-        <div class="feature">
+        <div class="card">
             <div class="funnelDisplay"><i class="fa-solid fa-headset"></i><h3>Personalización</h3></div>
             <p>Configura tus servidores según las necesidades específicas de tu negocio o comunidad.</p>
         </div>
     </div>
     <div class="infoSection">
+        <h2 class="title">Servicios profesionales <span>Para profesionales</span></h2>
         <div class="stats">
-            <h2 class="title">Servicios profesionales <span>Para profesionales</span></h2>
             <div class="stat">
                 <i class="fa-solid fa-puzzle-piece"></i>
-                <h3 class="funnelDisplay">50k +</h3>
+                <h3>50k +</h3>
                 <p>Variedad de plugins</p>
             </div>
             <div class="stat">
                 <i class="fa-solid fa-bookmark"></i>
-                <h3 class="funnelDisplay">Todo tipo de integraciones</h3>
+                <h3>Todo tipo de integraciones</h3>
                 <p>Faciles de configurar</p>
             </div>
             <div class="stat">
                 <i class="fa-solid fa-cloud-arrow-up"></i>
-                <h3 class="funnelDisplay">100+ </h3>
+                <h3>100+ </h3>
                 <p>Servicios en linea</p>
             </div>
             <div class="stat">
                 <i class="fa-regular fa-face-laugh-wink"></i>
-                <h3 class="funnelDisplay">50 +</h3>
+                <h3>50 +</h3>
                 <p>Clientes felices</p>
             </div>
         </div>
+        <div class="divides">
+            <div class="divide">
+                <h2 class="title">Panel único</h2>
+                <p class="titleDescription">Pruebe nuestro panel avanzado, que ofrece una instalación sencilla de complementos y una gestión eficiente de la base de datos. Disfrute de un flujo de trabajo optimizado y sin inconvenientes.</p>
+                <div class="carouselContainer">
+                    <button class="carouselBtn left"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel">
+                        <div class="carouselItem">
+                            <img src="/assets/media/carrusel1.png" loading="lazy" alt="Panel apartado de contabilidad" class="carouselImage" >
+                        </div>
+                        <div class="carouselItem">
+                            <img src="/assets/media/carrusel2.png" loading="lazy" alt="Panel apartado de ventas" class="carouselImage">
+                        </div>
+                        <div class="carouselItem">
+                            <img src="/assets/media/carrusel3.png" loading="lazy" alt="Panel apartado de gestión de almacén" class="carouselImage">
+                        </div>
+                    </div>
+                    <button class="carouselBtn right"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="divide">
+                <h2 class="title">Endersuit</h2>
+                <p class="titleDescription">Hoy en día, las pequeñas y medianas empresas (PYMEs) enfrentan problemas similares a los de las grandes corporaciones, especialmente en la planeación y administración de sus recursos. Sin embargo, las PYMEs cuentan con recursos limitados para hacer frente a estos desafíos.</p>
+                <video autoplay loop muted playsinline preload="auto" controlslist="nodownload nofullscreen noremoteplayback" disablePictureInPicture oncontextmenu="return false">
+                <source src="/assets/media/endersuit.mp4" type="video/mp4" />
+                Tu navegador no soporta <code>video</code>.
+              </video>
+            </div>
+        </div>
+        <h2 class="title">Trabajamos con tus aplicaciones SaaS favoritas</h2>
+        <p class="titleDescription">Descubre todas</p>
+        <div class="integrationsLogos">
+            <a href="https://www.crov.mx/"><img loading="lazy" src="assets/media/crov.avif" alt="Crov logo"></a>
+            <a href="https://testing.enderhosting.com.mx/"><img loading="lazy" src="/assets/media/endersuit-logo.png" alt="EnderSuit Logo"></a>
+            <a href="https://wemx.net/"><img loading="lazy" src="/assets/media/wemx.png" alt="Wemx Logo"></a>
+            <a href="https://pterodactyl.io/"><img loading="lazy" src="/assets/media/pterodactyl.svg" alt="Pterodactyl Logo"></a>
+            <a href="https://paymenter.org/"><img loading="lazy" src="/assets/media/paymenter.png" alt="Paymenter Logo"></a>
+        </div>
     </div>
+    <h2 class="title">Opciones sin código o con poca programación para empezar</h2>
+    <p class="titleDescription">Si deseas utilizar EnderHosting, <b>tienes múltiples opciones para comenzar sin necesidad de profundos conocimientos en programación.</b></p>
+    <div class="options cards">
+        <div class="card">
+            <div class="funnelDisplay"><i class="fa-solid fa-code"></i><h3>EnderDeploy</h3></div>
+            <p>EnderDeploy es nuestra plataforma que simplifica el despliegue de SaaS y la gestión de infraestructura en la nube sin necesidad de programación.</p>
+        </div>
+        <div class="card">
+            <div class="funnelDisplay"><i class="fa-solid fa-wrench"></i><h3>Personaliza con poca programación</h3></div>
+            <p>Realiza ajustes personalizados utilizando nuestras herramientas intuitivas y documentación clara.</p>
+        </div>
+        <div class="card">
+            <div class="funnelDisplay"><i class="fa-solid fa-wand-magic"></i><h3>Automatiza</h3></div>
+            <p>Conecta tus aplicaciones favoritas mediante nuestras APIs robustas para una integración sin esfuerzo.</p>
+        </div>
+    </div>
+    <div class="location">
+        <h2 class="title">Nuestra Ubicación</h2>
+        <p class="titleDescription">Nuestra sede principal se encuentra en la hermosa ciudad de Tepic, Nayarit, México.</p>
+        <img src="/assets/media/map-tepic.png" alt="Mapa de méxico, Tepic en Nayarit destacado con verde">
+    </div>
+    <div class="documentationContainer">
+        <h2 class="title">Documentación y Recursos</h2>
+        <p class="titleDescription">Aprende a configurar y administrar tus servidores con nuestra documentación y tutoriales en video.</p>
+        <div class="documentationItems">
+            <a class="documentationItem" href="https://docs.enderhosting.com.mx/endersuit/introduccion" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-right"></i>
+                <h3>Guía de Inicio Rápido</h3>
+                <p>Aprende a configurar tu servidor en pocos minutos con nuestra guía paso a paso.</p>
+                <p class="btn">Leer Más</p>
+            </a>
+            <a class="documentationItem" href="https://www.youtube.com/@enderhosting" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-right"></i>
+                <h3>Tutoriales en Video</h3>
+                <p>Accede a una serie de tutoriales en video para aprovechar al máximo nuestros servicios.</p>
+                <p class="btn">Ver Videos</p>
+            </a>
+            <a class="documentationItem" href="https://docs.enderhosting.com.mx/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-right"></i>
+                <h3>Documentacion</h3>
+                <p>Accede a guías detalladas y aprende a configurar, administrar e integrar nuestros servicios con facilidad.</p>
+                <p class="btn">Leer Más</p>
+            </a>
+          </div>
+    </div>
+    <h2 class="title">Documentación y Recursos</h2>
+    <p class="titleDescription">Aprende a configurar y administrar tus servidores con nuestra documentación y tutoriales en video.</p>
+    <div class="support cards">
+        <div class="card">
+            <div class="funnelDisplay"><i class="fa-solid fa-comments"></i><h3>Chat en Vivo</h3></div>
+            <p>Obtén ayuda inmediata a través de nuestro chat en vivo disponible 24/7.</p>
+        </div>
+        <div class="card">
+            <div class="funnelDisplay"><i class="fa-regular fa-envelope"></i><h3>Correo Electrónico</h3></div>
+            <p>Envíanos tus consultas y te responderemos en menos de 24 horas.</p>
+        </div>
+        <div class="card">
+            <div class="funnelDisplay"><i class="fa-solid fa-phone"></i><h3>Soporte Telefónico</h3></div>
+            <p>Llámanos para asistencia personalizada con nuestros expertos.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footerSections">
+            <div class="footerSection">
+                <h4>Sobre EnderHosting</h4>
+                <p>Somos el hosting de referencia en México, ofreciendo soluciones para pymes con la mejor tecnología y servicio.</p>
+            </div>
+            <div class="footerSection">
+              <h4>Servicios</h4>
+              <ul>
+                <li><a href="https://clients.enderhosting.com.mx/store/enderhosting-live">Web Hosting</a></li>
+                <li><a href="https://clients.enderhosting.com.mx/store/servidores-dedicados">Servidores Dedicados</a></li>
+                <li><a href="https://clients.enderhosting.com.mx/store/cloud-solutions">Soluciones para Pymes</a></li>
+              </ul>
+            </div>
+            <div class="footerSection">
+              <h4>Enlaces Rápidos</h4>
+              <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Caracteristicas</a></li>
+                <li><a href="/about">Acerca de</a></li>
+                <li><a href="https://erp.enderhosting.com.mx/contact" target="_blank">Contacto</a></li>
+                <li><a href="https://clients.enderhosting.com.mx/news" target="_blank">Blog</a></li>
+              </ul>
+            </div>
+            <div class="footerSection">
+                <h4>Contacto &amp; Legal</h4>
+                <p>Email: <a href="mailto:soporte@enderhosting.com.mx" target="_blank">soporte@enderhosting.com.mx</a></p>
+                <p>Teléfono: +52 311 393 5413</p>
+                <p>Dirección: Tepic, Nayarit, México</p>
+                <p><a href="https://clients.enderhosting.com.mx/p/poltica-de-privacidad" target="_blank">Aviso Legal</a></p>
+                <p><a href="https://clients.enderhosting.com.mx/p/terms-and-conditions" target="_blank">Términos y Condiciones</a></p>
+            </div>
+        </div>
+        <div class="footerCopyRight">
+            <p>© 2025 EnderHosting. Todos los derechos reservados.</p>
+            <p>EnderHosting<sup>®</sup> es una marca registrada.</p>
+        </div>
+        <div itemscope="" itemtype="http://schema.org/LocalBusiness" style="opacity: 0;">
+            <span itemprop="name">EnderHosting</span>
+            <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality">Tepic</span><br>
+            <span itemprop="addressRegion">Nayarit</span>
+        </div>
+    </footer>
+    <script src="/assets/scripts/carousel.js"></script>
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+          Tawk_LoadStart = new Date();
+        (function () {
+          var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+          s1.async = true;
+          s1.src = "https://embed.tawk.to/6769f76daf5bfec1dbe0d038/1ifqut196";
+          s1.charset = "UTF-8";
+          s1.setAttribute("crossorigin", "*");
+          s0.parentNode.insertBefore(s1, s0);
+        })();
+      </script>
 </body>
 </html>

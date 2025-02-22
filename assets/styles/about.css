@@ -1,0 +1,56 @@
+.aboutSection .container header{
+    margin: 10px;
+    padding: 50px;
+    background-color: var(--standard-background-hover);
+    border-radius: 26px;   
+    margin-top: 100px; 
+}
+.aboutTitle{
+    font-size: 40px;
+    font-family: "Funnel display", serif;
+    margin-bottom: 20px;
+    color: var(--standard-txt-color);
+    text-decoration: underline var(--blue-light);
+}
+.aboutSection .container h2{
+    text-align: center;
+    margin-top: 50px;
+}
+.teamMembers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.teamMembers .teamMember{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--standard-background-hover);
+    border-radius: 26px;
+    width: 300px;
+    text-align: center;
+}
+.teamMembers .teamMember img{
+    width: 150px;
+    height: 150px;
+    margin: 0px auto 1.5rem;
+    object-fit: cover;
+    border-radius: 400px;
+    border: solid 2px var(--blue-light);
+}
+.teamMembers .teamMember .role{
+    font-size: 20px;
+    font-weight: 500;
+    background: var(--blue-light);
+    color: white;
+    font-weight: 400;
+    border-radius: 100px;
+}
+@media (max-width: 768px) {
+    .teamMembers .teamMember{    
+        width: 100%;
+    }
+}

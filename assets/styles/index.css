@@ -3,6 +3,7 @@
     font-size: 50px;
     font-weight: 200;
     text-align: center;
+    margin-top: 70px;
 }
 .hero{
     color: #323232;
@@ -56,16 +57,16 @@
 .hero .heroButtons a:nth-child(1){
     margin-right: 20px;
 }
-.features{
+.cards{
     display: flex;
     margin-left: 20px;
     margin-right: 20px;
 }
-.featureTitle{
+.cardTitle{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 70px;
 }
-.features .feature{
+.cards .card{
     margin: 20px 10px;
     padding: 40px;
     border-radius: 20px;
@@ -74,21 +75,21 @@
     width: 30%;
     text-align: center;
 }
-.features .feature:hover{
+.cards .card:hover{
     transform: translateY(-8px);
     background-color: var(--standard-background-hover);
 }
-.features .feature div i{
+.cards .card div i{
     color: var(--blue-dark);
     font-size: 40px;
 }
-.features .feature div h3{
+.cards .card div h3{
     margin-left: 10px;
     margin-top: 10px;
     font-weight: 500;
     font-size: 25px;
 }
-.features .feature p{
+.cards .card p{
     margin-top: 20px;
     color: var(--standard-txt-color);
 }
@@ -112,7 +113,7 @@
     justify-content: space-between;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 .infoSection .stat{
     text-align: center;
@@ -125,69 +126,217 @@
 .infoSection .stat i{
     font-size: 40px;
 }
+.titleDescription{
+    text-align: center;
+    color: var(--standard-txt-color);
+    margin-bottom: 20px;
+}
+.infoSection .divides{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 70px;
+}
+.infoSection .divide{
+    width: 40%;
+}
+.infoSection video{
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 30px;
+    border: solid 1px;
+}
+.carouselContainer {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carouselItem {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+.carouselItem img {
+    width: 100%;
+    border-radius: 30px;
+}
+.carouselBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 200px;
+    z-index: 10;
+    cursor: pointer;
+}
+.carouselBtn.left {
+    left: 10px;
+}
+.carouselBtn.right {
+    right: 10px;
+}
+.integrationsLogos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.integrationsLogos a {
+    display: flex;
+}
+.integrationsLogos img {
+    width: 100px;
+    transition: transform 0.3s ease;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.integrationsLogos a:hover img{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.optionsTitle{
+    margin-top: 100px;
+}
+.options{
+    justify-content: center;
+}
+.location{
+    margin-top: 100px;
+    text-align: center;
+}
+.location img{
+    width: 50%;
+}
+.documentationContainer{
+    background-color: var(--standard-background);
+    padding-top: 5px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+.documentationItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: calc(100vw - 40px);
+    margin:20px 10px 0 10px;
+    gap: 20px;
+    background-color: var(--standard-background);
+}
+.documentationItems .documentationItem:nth-child(1){
+    background: url('/assets/media/guiaInicioBg.png');
+    background-size: cover;
+}
+.documentationItems .documentationItem:nth-child(2){
+    background: url('/assets/media/ytBg.png');
+    background-size: cover;
+}
+.documentationItems .documentationItem:nth-child(3){
+    background: url('/assets/media/docsBg.png');
+    background-size: cover;
+}
+.documentationItems .documentationItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    color: white;
+    padding: 30px;
+    border-radius: 40px;
+    flex-grow: 1;
+    height: 300px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.documentationItems .documentationItem h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+.documentationItems .documentationItem i {
+    border: 1px solid white;
+    padding: 7px 8px;
+    font-size: 26px;
+    border-radius: 200px;
+    position: absolute;
+    right: 20px;
+    transition: all 0.4s;
+    font-weight: 400;
+}
+.documentationItems .documentationItem:hover i{
+    background-color: white;
+    font-weight: 300;
+    color: black;
+    transform: rotate(-30deg);
+    transition: transform 0.4s;
+}
+.documentationItems .documentationItem .btn{
+    width: 100%;
+    font-size: 17px;
+    color: white;
+    padding: 10px;
+    border: solid 1px white;
+    text-align: center;
+    border-radius: 200px;
+    align-self: flex-start;
+}
+.documentationItems .documentationItem:hover .btn{
+    background-color: white;
+    color: black;
+    transition: all 0.4s;
+}
+.support{
+    justify-content: center;
+}
 @media (max-width: 1470px) {
-    .hero h1{
-        font-size: 70px;
-    }
-    .hero p{
-        font-size: 20px;
-    }
-    .hero{
-        background-position: 80%;
-    }
+    .hero h1{font-size: 70px;}
+    .hero p{font-size: 20px;}
+    .hero{background-position: 80%;}
 }
 @media (max-width: 1270px) {
-    .hero{
-        background-position: 20%;
-    }
-    .features{
-        flex-wrap: wrap;
-    }
-    .features .feature{
-        width: 48.1%;
-    }
+    .hero{background-position: 20%;}
+    .cards{flex-wrap: wrap;}
+    .cards .card{width: 48.1%;}
 }
 @media (max-width: 1100px){
-    .hero h1{
-        font-size: 50px;
-    }
-    .hero p{
-        font-size: 18px;
-    }
-    .features{
-        flex-direction: column;
-    }
-    .features .feature{
-        width: 100%;
-    }
-    .infoSection .stats{
-        justify-content: center;
-    }
+    .hero h1{font-size: 50px;}
+    .hero p{font-size: 18px;}
+    .cards{flex-direction: column;}
+    .cards .card{width: 100%;}
+    .infoSection .stats{justify-content: center;}
+    .infoSection .divides{flex-direction: column;}
+    .infoSection .divide{width: 100%;}
+    .location img{width: 100%;}
+    .documentationItems {flex-direction: column;}
+    .infoSection video{height: auto;}
 }
 @media (max-width: 700px){
-    .hero .heroButtons{
-        flex-direction: column;
-        margin-right: 200px;
-    }
-    .hero .heroButtons a{
-        margin: 10px 0px;
-        margin-right: 80px !important;
-        text-align: center;
-    }
+    .hero .heroButtons{flex-direction: column;margin-right: 200px;}
+    .hero .heroButtons a{margin: 10px 0px;margin-right: 80px !important;text-align: center;}
 }
 @media (max-width: 500px){
-    .hero h1{
-        font-size: 40px;
-    }
-    .hero p{
-        font-size: 16px;
-    }
+    .hero h1{font-size: 40px;}
+    .hero p{font-size: 16px;}
 }
 @media (max-width: 350px){
-    .hero h1{
-        font-size: 30px;
-    }
-    .hero p{
-        font-size: 14px;
-    }
+    .hero h1{font-size: 30px;}
+    .hero p{font-size: 14px;}
+}
+@media (max-width: 768px) {
+    .carouselBtn {font-size: 16px;padding: 8px;}
 }
