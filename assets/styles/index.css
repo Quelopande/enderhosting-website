@@ -330,6 +330,7 @@
     .hero .heroButtons a{margin: 10px 0px;margin-right: 80px !important;text-align: center;}
     .hero .heroButtons{margin: 0;}
     .hero .heroButtons a{width: 90%; margin-left: 5%!important;}
+    .hero{margin-top: 8vh !important;height: 88vh !important;}
 }
 @media (max-width: 500px){
     .hero h1{font-size: 40px;}
