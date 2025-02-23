@@ -24,9 +24,9 @@
     margin-left: 10%;
     padding-top: 25vh;
     font-size: 100px;
-    text-decoration: solid underline var(--blue-light);
 }
 .hero h1 span{
+    text-decoration: solid underline var(--blue-light);
     color: var(--blue-dark);
 }
 .hero p{
@@ -102,9 +102,9 @@
 }
 .infoSection .title span{
     background: var(--blue-light);
-    color: #dbe3ff;
+    color: #ffffff;
     padding: 5px 20px !important;
-    border-radius: 100px;
+    border-radius: 20px;
 }
 .infoSection .stats{
     display: flex;
@@ -153,6 +153,7 @@
     margin: auto;
     overflow: hidden;
     position: relative;
+    border-radius: 30px;
 }
 .carousel {
     display: flex;
@@ -164,7 +165,6 @@
 }
 .carouselItem img {
     width: 100%;
-    border-radius: 30px;
 }
 .carouselBtn {
     position: absolute;
@@ -236,7 +236,6 @@
     width: calc(100vw - 40px);
     margin:20px 10px 0 10px;
     gap: 20px;
-    background-color: var(--standard-background);
 }
 .documentationItems .documentationItem:nth-child(1){
     background: url('/assets/media/guiaInicioBg.png');
