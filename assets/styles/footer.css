@@ -9,7 +9,7 @@ footer .footerSections{
     flex-direction: row;
     flex-wrap: wrap;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 407px));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 237px));
     justify-content: space-around;
 }
 footer .footerSections .footerSection{
